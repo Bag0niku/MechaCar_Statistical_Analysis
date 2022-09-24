@@ -29,9 +29,9 @@ plt + geom_line(aes(y=equation, color="red", size=2)) + geom_point(aes(y=mpg, si
 coil_data <- read.csv(coil_file)
 
 # summarize the data
-total_summary <- coil_data %>% summarize(Min_PSI=min(PSI), Mean_PSI=mean(PSI), Median_PSI=median(PSI), Max_PSI=max(PSI), Production_Variance=sd(PSI)**2, SD=sd(PSI), .groups = 'keep')
+total_summary <- coil_data %>% summarize(Min_PSI=min(PSI), Mean_PSI=mean(PSI), Median_PSI=median(PSI), Max_PSI=max(PSI), Production_Variance=sd(PSI)**2, St_Dev=sd(PSI), .groups = 'keep')
 
-lot_summary <- coil_data %>% group_by(Manufacturing_Lot) %>% summarize(Min_PSI=min(PSI), Mean_PSI=mean(PSI), Median_PSI=median(PSI), Max_PSI=max(PSI), Production_Variance=sd(PSI)**2, SD=sd(PSI), .groups = 'keep')
+lot_summary <- coil_data %>% group_by(Manufacturing_Lot) %>% summarize(Min_PSI=min(PSI), Mean_PSI=mean(PSI), Median_PSI=median(PSI), Max_PSI=max(PSI), Production_Variance=sd(PSI)**2, St_Dev=sd(PSI), .groups = 'keep')
 
 print(total_summary)
 print(lot_summary)
