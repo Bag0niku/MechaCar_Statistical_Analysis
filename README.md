@@ -1,7 +1,16 @@
 # MechaCar_Statistical_Analysis
 Analysis of a new vehicle in production at a fictional company
 
-
+### Resources
+- Data: 
+    - Real dataset:
+        - Motor Trend Magazine's 1974 Car Dataset 
+    - Fictional Datasets: 
+        - Production PSI measurements for suspension coils
+        - Production measurements of prototype vehicle yet to be released
+- Software: 
+    - R 4.2
+    - RStudio 2022.07.01
 
 ## Linear Regression to Predict MPG
 
@@ -19,11 +28,18 @@ Q: Does this linear model predict mpg of MechaCar prototypes effectively? Why or
 
 Q: The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
+![](/Images/coil_total_summary.png)
+![](/Images/coil_lot_summary.png)
 
 ## T-Tests on Suspension Coils
 
 Q: briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+![](/Images/total_coil_ttest_summary.png)
 
+
+
+
+![](/Images/coil_ttest_summary.png)
 
 
 ## Study Design: MechaCar vs Competition
