@@ -24,22 +24,36 @@ Q: Does this linear model predict mpg of MechaCar prototypes effectively? Why or
 
 
 ## Summary Statistics on Suspension Coils
-
-
-Q: The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+To ensure production is producing quality products of the certain standard, companies must perform audits on each production lot made. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
+    
+For a general idea of the whole picture, here a summary table for the entire dataset:
 
 ![](/Images/coil_total_summary.png)
+
+- The total production is within the standard of having a variance less than 100.
+- However the range from minimum to maximum measured PSI is a little concerning.
+
 ![](/Images/coil_lot_summary.png)
+
+- Statistics for Lot 1 and Lot 2 are what we should be expecting from production. 
+- Lot 3 does not meet the standard required. There needs to be an investigation into what happened during production of these suspension coils and why the variance is so drastically different than the other 2 lots.
+
 
 ## T-Tests on Suspension Coils
 
-Q: briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+Comparing this production dataset with the entire population of acceptable suspension coils requires a T-Test. The anticipated mean of the population is 1500 PSI. 
+
 ![](/Images/total_coil_ttest_summary.png)
 
-
+- This test shows that this production dataset just barely acceptable and I anticipate Lot 3 to be the culperate for the low p-value based on the summary statistics in the previous section.
 
 
 ![](/Images/coil_ttest_summary.png)
+
+
+
+Q: briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
 
 
 ## Study Design: MechaCar vs Competition
