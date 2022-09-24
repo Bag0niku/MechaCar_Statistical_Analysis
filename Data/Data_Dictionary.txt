@@ -1,0 +1,30 @@
+Data Dictionary: 
+
+1974 Motor Trend Dataset :  https://figshare.com/articles/dataset/Motor_Trend_Car_Road_Tests/3122005/1 
+
+Reference :  Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411. 
+
+32 observations on 11 variables.
+
+mpg: Miles/(US) gallon
+
+cyl: Number of cylinders
+
+disp: Displacement (cu.in.)
+
+hp: Gross horsepower
+
+drat: Rear axle ratio
+
+wt: Weight (1000 lbs) 
+
+qsec:  1/4 mile time 
+
+vs: Engine shape (0 = v-shaped, 1 = straight)
+
+am: Transmission (0 = automatic, 1 = manual)
+
+gear: Number of forward gears
+
+carb: Number of carburettors
+
