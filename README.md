@@ -23,7 +23,7 @@ Plugging all these metrics into a linier regression model returned:
 - The p-value for the equation is near zero and very significant, meaning the coefficients for the metrics are not zero and can be used to predict the mpg of the vehicle.
 - The p-values of each coefficient are quite low, but only 3 of them are of any significance. The Intercept, Ground Clearance and Vehicle Length provided a non-random amount of variance to the mpg values.
  
-Now that we know what the linier regression model looks like based on the raw data, the next steps are to test for multicollinearity, Heteroskedasticity, and serial correlation within the dataset to varify the model's integrity.
+Now that we know what the linier regression model looks like based on the raw data, the next steps are to test for multicollinearity, Heteroskedasticity, and serial correlation within the dataset to varify the model's integrity. (Not yet completed.)
 
 
 ## Summary Statistics on Suspension Coils
