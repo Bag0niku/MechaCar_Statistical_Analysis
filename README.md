@@ -1,10 +1,8 @@
 # MechaCar_Statistical_Analysis
-Analysis of a new vehicle in production at a fictional company
+Analysis of a new vehicle in production at a fictional company. Production troubles are blocking progress on the MechaCar prototype. An analysis of production data is needed to provide insights that might be helpful to the manufacturing team.
 
 ### Resources
 - Data: 
-    - Real dataset:
-        - Motor Trend Magazine's 1974 Car Dataset 
     - Fictional Datasets: 
         - Production PSI measurements for suspension coils
         - Production measurements of prototype vehicle yet to be released
@@ -45,32 +43,40 @@ Comparing this production dataset with the entire population of acceptable suspe
 
 ![](/Images/total_coil_ttest_summary.png)
 
-- This test shows that this production dataset just barely acceptable and I anticipate Lot 3 to be the culperate for the low p-value based on the summary statistics in the previous section.
+- This test shows that this production dataset just barely acceptable and I anticipate Lot 3 to be the culprite for the low p-value based on the summary statistics in the previous section.
 
 
 ![](/Images/coil_ttest_summary.png)
 
+- Lot 1 is a perfect match with our goals, a rare sight!
+- Lot 2 is acceptable.
+- Lot 3 is not acceptable, the culprite as expected.
 
-
-Q: briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
-
+### Suspension Coil Audit Results:
+Lot 1 and 2 may be used in vehicle assembly. Lot 3 should be removed from the production floor and not used with vehicle assembly. Lot 3 has too much ability to compromise the safety of our customers. 
 
 
 ## Study Design: MechaCar vs Competition
 
-Task:
+To compare MechaCar's prototype vehicle to it's competitors, data that is usually used by customers to compare vehicles is required: 
+  - Vehicle Class Type
+  - Engine info: 
+      - horsepower, fuel type, mpg (city & highway)
+      - engine size (liters), number of cylinders, engine shape
+      - Transmission type, number of gears
+  - Interior: 
+      - number of passanger seats, amount of cargo space
+  - Safety Rating
+  -  Cost, New Car Price, Expected Resale Value
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
-In your description, address the following questions:
-- What metric or metrics are you going to test?
-- What is the null hypothesis or alternative hypothesis?
-- What statistical test would you use to test the hypothesis? And why?
-- What data is needed to run the statistical test?
+I would like to perform 2 tests on the MechaCar protoype for business insights and recommendations.
+ - Test the mpg to see if it is acceptable when compared to the competition with the same vehicle class type.
+     - Lesser one tail t-test
+         - Null Hypothesis: The mpg is statistically similar to the competition.
+         - Alternative: The mpg is statistically lower than the competition.
+ - Predict resale value when compared to the competion with the same vehicle class, assuming good condition.
+     - Use Linier Regression on sales of competitor's vehicles and compare our expected resale value with a T-Test.
+         - Null Hypothesis: The resale value is stistically similar to the competition.
+         - Alternative: The resale value is not statistically similar.
 
-
-Also required to have the following:
-- A metric to be tested is mentioned.
-- A null hypothesis or an alternative hypothesis is described.
-- A statistical test is described to test the hypothesis.
-- The data for the statistical test is described.
