@@ -11,20 +11,25 @@ Analysis of a new vehicle in production at a fictional company. Production troub
     - RStudio 2022.07.01
 
 ## Linear Regression to Predict MPG
+The Manufacturing team is having trouble with the MechaCar prototype body style. Providing the following metrics that they have been tracking, they want me to try predicting the mpg of the vehicle: 
+  - MPG, Vehicle Length, Vehicle Weight, Ground Clearance, Spoiler Angle, and All Wheel Drive (AWD).
 
-Q: Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+Plugging all these metrics into a linier regression model returned:
 
-Q: Is the slope of the linear model considered to be zero? Why or why not?
+- MPG = (6.267)vehicle_length + (0.00125)vehicle_weight + (0.0688)spoiler_angle + (3.546)ground_clearance + (-3.411)AWD - 104.0
 
-Q: Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+![](/Images/mpg_regression.png)
 
-
+- The p-value for the equation is near zero and very significant, meaning the coefficients for the metrics are not zero and can be used to predict the mpg of the vehicle.
+- The p-values of each coefficient are quite low, but only 3 of them are of any significance. The Intercept, Ground Clearance and Vehicle Length provided a non-random amount of variance to the mpg values.
+ 
+Now that we know what the linier regression model looks like based on the raw data, the next steps are to test for multicollinearity, Heteroskedasticity, and serial correlation within the dataset to varify the model's integrity.
 
 
 ## Summary Statistics on Suspension Coils
 To ensure production is producing quality products of the certain standard, companies must perform audits on each production lot made. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
     
-For a general idea of the whole picture, here a summary table for the entire dataset:
+For a general idea of the whole picture, a summary table for the entire suspension coil dataset provided by the manufacturing team:
 
 ![](/Images/coil_total_summary.png)
 
